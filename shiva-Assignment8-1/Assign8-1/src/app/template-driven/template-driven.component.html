@@ -1,0 +1,78 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+	<title></title>
+	<meta name="generator" content="LibreOffice 6.4.7.2 (Linux)"/>
+	<meta name="created" content="2022-04-10T16:38:10.317588353"/>
+	<meta name="changed" content="2022-04-10T17:40:42.183939232"/>
+	<style type="text/css">
+		@page { size: 8.5in 11in; margin: 0.79in }
+		p { margin-bottom: 0.1in; line-height: 115%; background: transparent }
+		pre { background: transparent }
+		pre.western { font-family: "Liberation Mono", monospace; font-size: 10pt }
+		pre.cjk { font-family: "Noto Sans Mono CJK SC", monospace; font-size: 10pt }
+		pre.ctl { font-family: "Liberation Mono", monospace; font-size: 10pt }
+	</style>
+</head>
+<body lang="en-US" link="#000080" vlink="#800000" dir="ltr"><pre class="western" style="font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; orphans: 2; widows: 2"><span style="display: inline-block; border: none; padding: 0in"><font color="#000000">&lt;!-- main app container --&gt;</span></font>
+<font color="#000000">&lt;div&gt;</font>
+<font color="#000000">    <span style="font-style: normal"><span style="font-weight: normal">&lt;div class=&quot;card&quot;&gt;</span></span></font>
+<font color="#000000">            <span style="font-style: normal"><span style="font-weight: normal">&lt;h5 class=&quot;card-header&quot;&gt;Template-Driven Form &lt;/h5&gt;</span></span></font>
+<font color="#000000">            <span style="font-style: normal"><span style="font-weight: normal">&lt;div class=&quot;card-body&quot;&gt;</span></span></font>
+<font color="#000000">                <span style="font-style: normal"><span style="font-weight: normal">&lt;form name=&quot;form&quot; (ngSubmit)=&quot;f.form.valid &amp;&amp; onSubmit()&quot; #f=&quot;ngForm&quot; novalidate&gt;</span></span></font>
+<font color="#000000">                    <span style="font-style: normal"><span style="font-weight: normal">&lt;div class=&quot;form-row&quot;&gt;</span></span></font>
+<font color="#000000">                        </font>
+<font color="#000000">                        <span style="font-style: normal"><span style="font-weight: normal">&lt;div class=&quot;form-group col&quot;&gt;</span></span></font>
+<font color="#000000">                            <span style="font-style: normal"><span style="font-weight: normal">&lt;label&gt;Full-Name&lt;/label&gt;</span></span></font>
+<font color="#000000">                            <span style="font-style: normal"><span style="font-weight: normal">&lt;input type=&quot;text&quot; name=&quot;fullName&quot;placeholder=&quot;Full-Name&quot; class=&quot;form-control&quot; [(ngModel)]=&quot;model.firstName&quot; #firstName=&quot;ngModel&quot; [ngClass]=&quot;{ 'is-invalid': f.submitted &amp;&amp; firstName.invalid }&quot;&gt;</span></span></font>
+<font color="#000000">                            </font>
+<font color="#000000">                        <span style="font-style: normal"><span style="font-weight: normal">&lt;/div&gt;</span></span></font>
+<font color="#000000">                        </font>
+<font color="#000000">                    <span style="font-style: normal"><span style="font-weight: normal">&lt;/div&gt;</span></span></font>
+<font color="#000000">                    <span style="font-style: normal"><span style="font-weight: normal">&lt;div class=&quot;form-group&quot;&gt;</span></span></font>
+<font color="#000000">                        <span style="font-style: normal"><span style="font-weight: normal">&lt;label&gt;Email&lt;/label&gt;</span></span></font>
+<font color="#000000">                        <span style="font-style: normal"><span style="font-weight: normal">&lt;input type=&quot;text&quot; name=&quot;email&quot;placeholder=&quot;Email&quot; class=&quot;form-control&quot; [(ngModel)]=&quot;model.email&quot; #email=&quot;ngModel&quot; [ngClass]=&quot;{ 'is-invalid': f.submitted &amp;&amp; email.invalid }&quot;&gt;</span></span></font>
+<font color="#000000">                       </font>
+<font color="#000000">                    <span style="font-style: normal"><span style="font-weight: normal">&lt;/div&gt;</span></span></font>
+<font color="#000000">                    <span style="font-style: normal"><span style="font-weight: normal">&lt;div class=&quot;form-row&quot;&gt;</span></span></font>
+<font color="#000000">                        <span style="font-style: normal"><span style="font-weight: normal">&lt;div class=&quot;form-group col&quot;&gt;</span></span></font>
+<font color="#000000">                            <span style="font-style: normal"><span style="font-weight: normal">&lt;label&gt;Phone Number&lt;/label&gt;</span></span></font>
+<font color="#000000">                            <span style="font-style: normal"><span style="font-weight: normal">&lt;input type=&quot;number&quot; name=&quot;Phone no&quot;placeholder=&quot;Phone-Number&quot; class=&quot;form-control&quot; [(ngModel)]=&quot;model.phoneno&quot; #phoneno=&quot;ngModel&quot;&gt;&lt;/div&gt;</span></span></font>
+<font color="#000000">                        <span style="font-style: normal"><span style="font-weight: normal">&lt;/div&gt;</span></span></font>
+<font color="#000000">                    <span style="font-style: normal"><span style="font-weight: normal">&lt;div class=&quot;form&quot;&gt;</span></span></font>
+<font color="#000000">                        <span style="font-style: normal"><span style="font-weight: normal">&lt;div class=&quot;form-group&quot;&gt;</span></span></font>
+<font color="#000000">                            <span style="font-style: normal"><span style="font-weight: normal">&lt;label&gt;Password&lt;/label&gt;</span></span></font>
+<font color="#000000">                            <span style="font-style: normal"><span style="font-weight: normal">&lt;input type=&quot;password&quot; name=&quot;password&quot; placeholder=&quot;Password&quot;class=&quot;form-control&quot; [(ngModel)]=&quot;model.password&quot; #password=&quot;ngModel&quot; [ngClass]=&quot;{ 'is-invalid': f.submitted &amp;&amp; password.invalid }&quot; &gt;</span></span></font>
+<font color="#000000">                           </font>
+<font color="#000000">                        <span style="font-style: normal"><span style="font-weight: normal">&lt;/div&gt;</span></span></font>
+<font color="#000000">                        <span style="font-style: normal"><span style="font-weight: normal">&lt;div class=&quot;form-group&quot;&gt;</span></span></font>
+<font color="#000000">                            <span style="font-style: normal"><span style="font-weight: normal">&lt;label&gt;Confirm Password&lt;/label&gt;</span></span></font>
+<font color="#000000">                            <span style="font-style: normal"><span style="font-weight: normal">&lt;input type=&quot;password&quot; name=&quot;confirmPassword&quot;placeholder=&quot;Confirm Password&quot; class=&quot;form-control&quot; [(ngModel)]=&quot;model.confirmPassword&quot; #confirmPassword=&quot;ngModel&quot; [ngClass]=&quot;{ 'is-invalid': f.submitted &amp;&amp; confirmPassword.invalid }&quot;&gt;</span></span></font>
+<font color="#000000">                            </font>
+<font color="#000000">                        <span style="font-style: normal"><span style="font-weight: normal">&lt;/div&gt;</span></span></font>
+<font color="#000000">                    <span style="font-style: normal"><span style="font-weight: normal">&lt;/div&gt;</span></span></font>
+<font color="#000000">                    <span style="font-style: normal"><span style="font-weight: normal">&lt;div class=&quot;form-group form-check&quot;&gt;</span></span></font>
+<font color="#000000">                        <span style="font-style: normal"><span style="font-weight: normal">&lt;input type=&quot;checkbox&quot; name=&quot;acceptTerms&quot; id=&quot;acceptTerms&quot; class=&quot;form-check-input&quot; [(ngModel)]=&quot;model.acceptTerms&quot; #acceptTerms=&quot;ngModel&quot; [ngClass]=&quot;{ 'is-invalid': f.submitted &amp;&amp; acceptTerms.invalid }&quot;&gt;</span></span></font>
+<font color="#000000">                        <span style="font-style: normal"><span style="font-weight: normal">&lt;label for=&quot;acceptTerms&quot; class=&quot;form-check-label&quot;&gt;Accept Terms &amp; Conditions&lt;/label&gt;</span></span></font>
+<font color="#000000">                        <span style="font-style: normal"><span style="font-weight: normal">&lt;div *ngIf=&quot;f.submitted &amp;&amp; acceptTerms.invalid&quot; class=&quot;invalid-feedback&quot;&gt;Accept Ts &amp; Cs is required&lt;/div&gt;</span></span></font>
+<font color="#000000">                    <span style="font-style: normal"><span style="font-weight: normal">&lt;/div&gt;</span></span></font>
+<font color="#000000">                    <span style="font-style: normal"><span style="font-weight: normal">&lt;div class=&quot;text-center&quot;&gt;</span></span></font>
+<font color="#000000">                        <span style="font-style: normal"><span style="font-weight: normal">&lt;button class=&quot;btn btn-primary mr-1&quot;&gt;Sign-up&lt;/button&gt;</span></span></font>
+<font color="#000000">                    <span style="font-style: normal"><span style="font-weight: normal">&lt;/div&gt;</span></span></font>
+<font color="#000000">                <span style="font-style: normal"><span style="font-weight: normal">&lt;/form&gt;</span></span></font>
+<font color="#000000">            <span style="font-style: normal"><span style="font-weight: normal">&lt;/div&gt;</span></span></font>
+<font color="#000000">        <span style="font-style: normal"><span style="font-weight: normal">&lt;/div&gt;</span></span></font>
+<font color="#000000">        </font>
+<font color="#000000">    <span style="font-style: normal"><span style="font-weight: normal">&lt;/div&gt;</span></span></font>
+
+<font color="#000000">    <span style="font-style: normal"><span style="font-weight: normal">&lt;footer class=&quot;fixed-bottom text-center&quot;&gt;</span></span></font>
+<font color="#000000">        <span style="font-style: normal"><span style="font-weight: normal">&lt;p&gt;Author: </span></span><span style="font-style: normal"><span style="font-weight: normal">shiva</span></span><span style="font-style: normal"><span style="font-weight: normal">&lt;br&gt;</span></span></font>
+<font color="#000000">            <span style="font-style: normal"><span style="font-weight: normal">&lt;a href=&quot; # &quot;&gt;</span></span><span style="font-style: normal"><span style="font-weight: normal">siva.lomada</span></span><span style="font-style: normal"><span style="font-weight: normal">@mpokket.com&lt;/a&gt;&lt;/p&gt;</span></span></font>
+<font color="#000000">        <span style="font-style: normal"><span style="font-weight: normal">&lt;p&gt;Edureka Assignment 8-1&lt;/p&gt;</span></span></font>
+<font color="#000000">    <span style="font-style: normal"><span style="font-weight: normal">&lt;/footer&gt; </span></span></font></pre><p style="margin-bottom: 0in; line-height: 100%; orphans: 2; widows: 2">
+<br/>
+
+</p>
+</body>
+</html>
